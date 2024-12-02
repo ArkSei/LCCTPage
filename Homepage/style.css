@@ -1,0 +1,140 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+.header {
+    background-color: #333; /* Dark background for the header */
+    color: white; /* White text color for contrast */
+    padding: 15px 20px; /* Reduced padding for header */
+    text-align: center;
+    font-size: 24px; /* Adjusted font size for header text */
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    height: 80px; /* Reduced header height */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px; /* Reduced font size for header text */
+    color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 80px; /* Positioning the navbar right below the header */
+    left: 0;
+    width: 100%;
+    z-index: 9; /* Making sure navbar stays below the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #333;
+    padding: 16px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+/* Body content section */
+body {
+    padding-top: 150px; /* Adds space below the header and navbar to avoid overlap */
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+body {
+    padding-top: 100px; /* Make space for header and navbar */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar a {
+        padding: 10px;
+    }
+}
+
+
+/* Main Content Section */
+.content {
+    padding: 120px 20px 20px 20px; /* Add top padding to avoid content being hidden behind navbar */
+    text-align: center;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+/* Grid Section Below Content */
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.grid-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design: Adjust the grid layout for smaller screens */
+@media (max-width: 768px) {
+    .grid-section {
+        grid-template-columns: 1fr; /* Stack the items vertically */
+    }
+}

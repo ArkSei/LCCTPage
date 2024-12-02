@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Admission | La Consolacion College Tanauan</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <!-- Divs for Header and Navbar that will be populated by JavaScript -->
+    <div id="header-container"></div>
+    <div id="navbar-container"></div>
+
+    <!-- Office Admission Section -->
+    <div class="admission-section">
+        <h1>Office Admission</h1>
+        <p class="address">A. Mabini Avenue, Tanauan City, Batangas 4232</p>
+
+        <div class="admission-info">
+            <div class="info-item">
+                <h2>Office Hours</h2>
+                <p>Monday to Friday: 7:00 AM - 5:00 PM</p>
+                <p>Saturday and Sunday: Closed</p>
+            </div>
+
+            <div class="info-item">
+                <h2>Contact Information</h2>
+                <p><strong>Phone:</strong> <a href="tel:(043)778-1020">(043) 778-1020</a></p>
+                <p><strong>Email:</strong> <a href="mailto:admission@lcctanauan.edu.ph">admission@lcctanauan.edu.ph</a></p>
+            </div>
+
+            <div class="info-item">
+                <h2>Online Registration Inquiries</h2>
+                <p><strong>Email:</strong> <a href="mailto:preregis@lcctanauan.edu.ph">preregis@lcctanauan.edu.ph</a></p>
+            </div>
+
+            <div class="info-item">
+                <h2>Tuition & Enrollment Inquiries</h2>
+                <p><strong>Email:</strong> <a href="mailto:finance@lcctanauan.edu.ph">finance@lcctanauan.edu.ph</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to load the header and navbar -->
+    <script>
+        // Function to load HTML from external file
+        function loadHTML(file, elementId) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => {
+                    console.log('Error loading HTML: ', error);
+                });
+        }
+
+        // Load header and navbar on page load
+        window.onload = function() {
+            loadHTML('header.html', 'header-container');
+            loadHTML('navbar.html', 'navbar-container');
+        };
+    </script>
+
+</body>
+</html>

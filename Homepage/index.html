@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LA CONSOLACION COLLEGE TANAUAN - The Premiere Catholic Educational Institution in the Region</title>
+    <title>College Homepage</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
 </head>
 <body>
-    
+
+    <!-- Divs for Header and Navbar that will be populated by JavaScript -->
+    <div id="header-container"></div>
+    <div id="navbar-container"></div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <h1>Welcome to La Consolacion College Tanauan</h1>
+    </div>
+
+    <!-- Grid Section Below Content -->
+    <div class="grid-section">
+        <div class="grid-item">
+            <h2>Mission</h2>
+            <p>ULCC-SL Vision as a Catholic Augustinian Marian Educational System, commits itself to holistic formation of the 21st century learners.</p>
+        </div>
+        <div class="grid-item">
+            <h2>Vision</h2>
+            <p>As we nurture a system of ASOLC unified learning communities in Laguna and Batangas, we assume the responsibilities of: (1) Providing innovative and transformative education for lifelong learning; (2) creating sustainable community involvement and extension programs, and; (3) utilizing functional research projects for the development of ULCC-SL campuses, industry, educational pedagogies, and communities.</p>
+        </div>
+        <div class="grid-item">
+            <h2>Core Values</h2>
+            <p>Our core values are represented by the acronym ULCC-SL: U-Unity in Truth, L- Loyalty, C-Compassion, C-Committed to Competence, S-Service to God and Country , L-Love of Creation.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript to load the header and navbar -->
+    <script>
+        // Function to load HTML from external file
+        function loadHTML(file, elementId) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => {
+                    console.log('Error loading HTML: ', error);
+                });
+        }
+
+        // Load header and navbar on page load
+        window.onload = function() {
+            loadHTML('header.html', 'header-container');
+            loadHTML('navbar.html', 'navbar-container');
+        };
+    </script>
+
 </body>
 </html>

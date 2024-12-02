@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | La Consolacion College Tanauan</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <!-- Divs for Header and Navbar that will be populated by JavaScript -->
+    <div id="header-container"></div>
+    <div id="navbar-container"></div>
+
+    <!-- About Content Section -->
+    <div class="about-content">
+        <h1>About La Consolacion College Tanauan</h1>
+
+        <!-- Timeline Section -->
+        <div class="timeline">
+            <div class="timeline-item">
+                <h2>LA CONSOLACION COLLEGE UNIFICATION (2015)</h2>
+                <p><strong>Regional Integration of ASAS schools in a Unified System</strong></p>
+                <p>Sr. Emilia Lacuarta, OSA, decided to integrate LCCT and LCCB, holding the name Unified La Consolacion College – South Luzon (ULCC-SL).</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>INNOVATIONS & REMARKABLE ACHIEVEMENTS (SY 2012-2013)</h2>
+                <p><strong>K-12 IMPLEMENTATION</strong></p>
+                <p>Ms. Remedios Molinyawe, along with other academic administrators, began the implementation of the K-12 program, adding foreign languages such as Spanish and Nihongo.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>PAASCU LEVEL II STATUS (2012-2013)</h2>
+                <p><strong>PAASCU Level II Accreditation of LCCT</strong></p>
+                <p>The Grade School and High School Departments were granted Level II re-accreditation, ensuring another 5 years of Level II status.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>UbD Implementation (SY 2010-2011)</h2>
+                <p><strong>Understanding by Design</strong></p>
+                <p>Ms. Remedios Molinyawe and Mrs. Erlinda Padilla began implementing the UbD (Understanding by Design) framework.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>Emerald Jubilee (2008)</h2>
+                <p><strong>Sapphire Year of LCCT</strong></p>
+                <p>Sr. Emilia Lacuarta, OSA, focused on achieving innovative education and professional growth for the entire personnel.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>College Department - First Graduation Rites (March 31, 2007)</h2>
+                <p><strong>LCCT Higher Education First Commencement Exercises</strong></p>
+                <p>The College Department celebrated its first graduation with 13 graduating students from various courses.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>PAASCU VISIT (2003)</h2>
+                <p><strong>PAASCU Accreditation</strong></p>
+                <p>LCCT passed the PAASCU accreditation for both the High School and Grade School Departments.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>BUILDING CONSTRUCTION (2002-2003)</h2>
+                <p><strong>Ground-breaking and Construction of New Building</strong></p>
+                <p>A four-storey building was constructed to house the High School and College Departments, along with the approval of several tertiary courses by CHED.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>Golden Jubilee (1998-1999)</h2>
+                <p><strong>OLFA Golden Jubilee Celebration</strong></p>
+                <p>The school celebrated its Golden Jubilee with a week-long celebration.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>Continual Improvement for Stability and Growth (1988-1994)</h2>
+                <p><strong>New Principal and New Buildings</strong></p>
+                <p>Sister Concepcion Leopoldo, OSA, oversaw the construction of new buildings, including a multi-purpose hall and gymnasium with support from the high school graduates.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>Revolutionizing the Catholic-Augustinian Education (1978-1985)</h2>
+                <p><strong>Adoption of Catholic School System Development Program</strong></p>
+                <p>Sister Ma. Fidelis encouraged the adoption of the CS-SD program to promote staff development and improve educational standards.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>Revitalizing Students' Potential (1970-1978)</h2>
+                <p><strong>Focus on Holistic Student Development</strong></p>
+                <p>Sisters Susana Agudelo, OSA, and Adelina Segismundo, OSA, re-engineered the school activities to emphasize holistic student development. The OLFA Alumni Association was also launched in 1973.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>Transforming the Barung-Barung School into OLFA (1948-1970)</h2>
+                <p><strong>Inauguration of OLFA School</strong></p>
+                <p>On October 24, 1948, the school building housing the pioneer students of OLFA was inaugurated, starting with three classrooms and a small library.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>The Church and Augustinian Education (1948)</h2>
+                <p><strong>Establishment of Catholic Schools in the Philippines</strong></p>
+                <p>The Augustinian Friars began establishing Catholic schools, including OLFA, to provide educational services to local communities.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h2>Our Lady of Fatima (OLFA) was Established (June 20, 1948)</h2>
+                <p><strong>Founding of OLFA</strong></p>
+                <p>Sor Encarnacion de los Remedios, OSA, and three other nuns founded OLFA with the aim of providing quality education to the local community.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to load the header and navbar -->
+    <script>
+        // Function to load HTML from external file
+        function loadHTML(file, elementId) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => {
+                    console.log('Error loading HTML: ', error);
+                });
+        }
+
+        // Load header and navbar on page load
+        window.onload = function() {
+            loadHTML('header.html', 'header-container');
+            loadHTML('navbar.html', 'navbar-container');
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+.header {
+    background-color: #333; /* Dark background for the header */
+    color: white; /* White text color for contrast */
+    padding: 15px 20px; /* Reduced padding for header */
+    text-align: center;
+    font-size: 24px; /* Adjusted font size for header text */
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    height: 80px; /* Reduced header height */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px; /* Reduced font size for header text */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 80px; /* Positioning the navbar right below the header */
+    left: 0;
+    width: 100%;
+    z-index: 9; /* Making sure navbar stays below the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #333;
+    padding: 16px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+/* Body content section */
+body {
+    padding-top: 150px; /* Adds space below the header and navbar to avoid overlap */
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Office Admission Section styling */
+.admission-section {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admission-section h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.admission-section .address {
+    text-align: center;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.admission-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.info-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-item h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-item p {
+    color: #666;
+}
+
+.info-item a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .admission-info {
+        grid-template-columns: 1fr;
+    }
+}
