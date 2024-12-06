@@ -98,8 +98,8 @@ body {
 
 /* Header Section */
 .header {
-    background-color: darkblue; /* Dark background for the header */
-    color: white; /* White text color for contrast */
+    background-color: darkblue; 
+    color: white; 
     padding: 15px 20px; 
     text-align: center;
     font-size: 24px; 
@@ -110,7 +110,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     z-index: 10;
-    height: 80px; 
+    height: 90px; 
 }
 
 .header h1 {
