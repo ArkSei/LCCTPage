@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download Forms | La Consolacion College Tanauan</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
-    <!-- Divs for Header and Navbar that will be populated by JavaScript -->
+   
     <div id="header-container"></div>
     <div id="navbar-container"></div>
 
-    <!-- Content Section for Download Forms -->
+    
     <div class="download-section">
         <h1>Download Application Forms</h1>
         <p>Below are the forms that you can download for various processes at La Consolacion College Tanauan.</p>
@@ -45,9 +45,9 @@
         </div>
     </div>
 
-    <!-- JavaScript to load the header and navbar -->
+    
     <script>
-        // Function to load HTML from external file
+        
         function loadHTML(file, elementId) {
             fetch(file)
                 .then(response => response.text())
@@ -59,7 +59,6 @@
                 });
         }
 
-        // Load header and navbar on page load
         window.onload = function() {
             loadHTML('header.html', 'header-container');
             loadHTML('navbar.html', 'navbar-container');

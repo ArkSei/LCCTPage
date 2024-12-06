@@ -1,4 +1,4 @@
-/* Event Section Styling */
+
 .event-section {
     background-color: #f8f8f8;
     padding: 60px 30px;
@@ -13,7 +13,7 @@
 }
 
 .event-section:hover {
-    transform: translateY(-5px); /* Adds a slight lift effect */
+    transform: translateY(-5px); 
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
@@ -98,11 +98,11 @@ body {
 
 /* Header Section */
 .header {
-    background-color: #333; /* Dark background for the header */
+    background-color: darkblue; /* Dark background for the header */
     color: white; /* White text color for contrast */
-    padding: 15px 20px; /* Reduced padding for header */
+    padding: 15px 20px; 
     text-align: center;
-    font-size: 24px; /* Adjusted font size for header text */
+    font-size: 24px; 
     font-weight: bold;
     position: fixed;
     top: 0;
@@ -110,12 +110,12 @@ body {
     width: 100%;
     box-sizing: border-box;
     z-index: 10;
-    height: 80px; /* Reduced header height */
+    height: 80px; 
 }
 
 .header h1 {
     margin: 0;
-    font-size: 24px; /* Reduced font size for header text */
+    font-size: 24px;
 }
 
 /* Navbar Styles */
@@ -124,10 +124,10 @@ body {
     display: flex;
     justify-content: center;
     position: fixed;
-    top: 80px; /* Positioning the navbar right below the header */
+    top: 80px; 
     left: 0;
     width: 100%;
-    z-index: 9; /* Making sure navbar stays below the header */
+    z-index: 9; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -147,7 +147,7 @@ body {
 
 /* Body content section */
 body {
-    padding-top: 150px; /* Adds space below the header and navbar to avoid overlap */
+    padding-top: 150px; 
 }
 
 /* Media Queries */
